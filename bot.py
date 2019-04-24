@@ -6,8 +6,6 @@ import os
 import random
 import time
 
-os.system('color 0A')
-
 bot = commands.Bot(command_prefix = "?")
 @bot.event
 async def on_ready():
@@ -143,5 +141,4 @@ async def clear(ctx, number):
 
 
 
-
-bot.run('NTcwMjg2MjAwMTY3MDcxNzY1.XL8-gA.rJPo9MfJItIQVaYvME2HtiAjYlQ')
+bot.run(os.getenv('TOKEN'))
